@@ -4,6 +4,11 @@
 
 local vim = vim
 
+if vim.fn.has("macunix") then
+  vim.g.python3_host_prog = "/Users/wangz10/.pyenv/versions/neovim/bin/python"
+else
+end
+
 local options = {
   autochdir = true,
 }
