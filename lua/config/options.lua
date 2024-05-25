@@ -4,9 +4,10 @@
 
 local vim = vim
 
-if vim.fn.has("macunix") then
-  vim.g.python3_host_prog = "/Users/wangz10/.pyenv/versions/neovim/bin/python"
+if vim.loop.os_uname().sysname == "Windows_NT" then
+  vim.g.python3_host_prog = "C:\\Users\\WZY\\.pyenv-win-venv\\envs\\neovim\\Scripts\\python.exe"
 else
+  vim.g.python3_host_prog = "/Users/wangz10/.pyenv/versions/neovim/bin/python"
 end
 
 local options = {
