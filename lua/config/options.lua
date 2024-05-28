@@ -13,8 +13,11 @@ end
 
 -- set vim.opt
 local options = {
-  autochdir = true,
   spelllang = { "en", "cjk" },
+  -- autochdir = true,
+  --wrap = true,
+  -- textwidth = 80,
+  -- formatoptions = "jcroqlnt",
 }
 
 for k, v in pairs(options) do
