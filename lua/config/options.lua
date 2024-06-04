@@ -14,6 +14,7 @@ end
 -- set vim.opt
 local options = {
   spelllang = { "en", "cjk" },
+  relativenumber = false,
 }
 
 for k, v in pairs(options) do
