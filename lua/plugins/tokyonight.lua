@@ -1,16 +1,16 @@
 return {
   "folke/tokyonight.nvim",
-  config = function()
-    require("tokyonight").setup({
-      on_highlights = function(hl, colors)
-        hl.LineNr = {
-          -- fg = "#fffb7b",
-          fg = "#b2b8cf",
-        }
-        hl.CursorLineNr = {
-          fg = colors.orange,
-        }
-      end,
-    })
-  end,
+  opts = {
+    style = "moon",
+    on_highlights = function(hl, colors)
+      -- change line number color
+      hl.LineNr = {
+        fg = "#b2b8cf",
+      }
+      -- change current line numebr color
+      hl.CursorLineNr = {
+        fg = colors.orange,
+      }
+    end,
+  },
 }
