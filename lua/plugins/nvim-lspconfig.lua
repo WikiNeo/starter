@@ -6,7 +6,7 @@ return {
         init_options = {
           settings = {
             format = {
-              args = { "--config=~/.config/ruff.toml" },
+              args = { "--config=~/.config/nvim/config/ruff.toml" },
             },
           },
         },
