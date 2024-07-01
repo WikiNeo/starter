@@ -11,6 +11,10 @@ else
   vim.g.python3_host_prog = "/Users/wangz10/.pyenv/versions/neovim/bin/python"
 end
 
+-- Enable the option to require a Prettier config file
+-- If no prettier config file is found, the formatter will not be used
+vim.g.lazyvim_prettier_needs_config = false
+
 -- set vim.opt
 local options = {
   spelllang = { "en", "cjk" },
