@@ -6,7 +6,7 @@ local vim = vim
 
 -- Set different python3_host_prog value based on OS
 if vim.loop.os_uname().sysname == "Windows_NT" then
-  vim.g.python3_host_prog = "C:\\Users\\WZY\\.pyenv-win-venv\\envs\\neovim\\Scripts\\python.exe"
+  vim.g.python3_host_prog = "C:\\Users\\WZY\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
 else
   vim.g.python3_host_prog = "/Users/wangz10/.pyenv/versions/neovim/bin/python"
   vim.g.ruby_host_prog = "/Users/wangz10/.rbenv/versions/3.1.2/bin/neovim-ruby-host"
