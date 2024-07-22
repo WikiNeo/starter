@@ -20,6 +20,7 @@ vim.g.lazyvim_prettier_needs_config = false
 local options = {
   spelllang = { "en", "cjk" },
   relativenumber = false,
+  conceallevel = 0,
 }
 
 for k, v in pairs(options) do
