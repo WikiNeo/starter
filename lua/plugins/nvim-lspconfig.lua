@@ -2,7 +2,7 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     servers = {
-      ruff_lsp = {
+      ruff = {
         init_options = {
           settings = {
             format = {

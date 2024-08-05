@@ -11,6 +11,11 @@ else
   vim.g.python3_host_prog = "/Users/wangz10/.pyenv/versions/neovim/bin/python"
   vim.g.ruby_host_prog = "/Users/wangz10/.rbenv/versions/3.1.2/bin/neovim-ruby-host"
 end
+-- LSP Server to use for Python.
+-- Set to "basedpyright" to use basedpyright instead of pyright.
+vim.g.lazyvim_python_lsp = "pyright"
+-- Set to "ruff_lsp" to use the old LSP implementation version.
+vim.g.lazyvim_python_ruff = "ruff"
 
 -- Enable the option to require a Prettier config file
 -- If no prettier config file is found, the formatter will not be used
