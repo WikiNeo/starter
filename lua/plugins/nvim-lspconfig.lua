@@ -5,7 +5,13 @@ return {
       ruff = {
         init_options = {
           settings = {
-            configuration = "~/.config/nvim/config/ruff.toml",
+            configuration = function()
+              if vim.loop.os_uname().sysname == "Darwin" then
+                return "~/.config/nvim/config/ruff_mac.toml"
+              else
+                return "~/.config/nvim/config/ruff.toml"
+              end
+            end,
           },
         },
       },

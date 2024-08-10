@@ -27,3 +27,8 @@ exclude = [
   "site-packages",
   "venv",
 ]
+
+[format]
+# Like Black, use double quotes for strings.
+#   We will use single quotes instead for current project compatibility
+quote-style = "single"

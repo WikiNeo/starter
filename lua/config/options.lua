@@ -10,7 +10,7 @@ if vim.loop.os_uname().sysname == "Windows_NT" then
 elseif vim.loop.os_uname().sysname == "Linux" then
   vim.g.python3_host_prog = "/home/wikineo/.pyenv/versions/neovim/bin/python"
   vim.g.ruby_host_prog = "/home/wikineo/.rbenv/versions/3.3.4/bin/neovim-ruby-host"
-else
+elseif vim.loop.os_uname().sysname == "Darwin" then
   vim.g.python3_host_prog = "/Users/wangz10/.pyenv/versions/neovim/bin/python"
   vim.g.ruby_host_prog = "/Users/wangz10/.rbenv/versions/3.1.2/bin/neovim-ruby-host"
 end
