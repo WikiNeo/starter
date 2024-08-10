@@ -1,3 +1,4 @@
+local vim = vim
 return {
   "neovim/nvim-lspconfig",
   opts = {
@@ -5,13 +6,7 @@ return {
       ruff = {
         init_options = {
           settings = {
-            configuration = function()
-              if vim.loop.os_uname().sysname == "Darwin" then
-                return "~/.config/nvim/config/ruff_mac.toml"
-              else
-                return "~/.config/nvim/config/ruff.toml"
-              end
-            end,
+            configuration = "~/.config/nvim/config/ruff.toml",
           },
         },
       },
