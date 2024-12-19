@@ -4,6 +4,7 @@
 
 local vim = vim
 
+-- LSP START -----------
 -- Set different python3_host_prog value based on OS
 if vim.loop.os_uname().sysname == "Windows_NT" then
   vim.g.python3_host_prog = "C:\\Users\\WZY\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
@@ -19,12 +20,15 @@ end
 vim.g.lazyvim_python_lsp = "pyright"
 -- Set to "ruff_lsp" to use the old LSP implementation version.
 vim.g.lazyvim_python_ruff = "ruff"
+--- LSP END-----------
 
+-- Prettier START---------
 -- Enable the option to require a Prettier config file
 -- If no prettier config file is found, the formatter will not be used
 vim.g.lazyvim_prettier_needs_config = false
+-- Prettier END---------
 
--- set vim.opt
+-- vim.opt START----------
 local options = {
   spelllang = { "en", "cjk" },
   relativenumber = false,
@@ -34,3 +38,4 @@ local options = {
 for k, v in pairs(options) do
   vim.opt[k] = v
 end
+-- vim.opt END----------
