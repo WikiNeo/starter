@@ -6,7 +6,7 @@ return {
       ruff = {
         init_options = {
           settings = {
-            configuration = "~/.config/nvim/config/ruff.toml",
+            configuration = "~/.config/nvim/config/ruff/ruff.toml",
           },
         },
       },
