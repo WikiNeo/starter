@@ -81,6 +81,8 @@ return {
     "neovim/nvim-lspconfig",
     dependencies = {
       "jose-elias-alvarez/typescript.nvim",
+      -- init functions are always executed during startup.
+      -- Mostly useful for setting vim.g.* configuration used by Vim plugins startup
       init = function()
         require("lazyvim.util").lsp.on_attach(function(_, buffer)
           -- stylua: ignore
