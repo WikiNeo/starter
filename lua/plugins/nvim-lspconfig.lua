@@ -1,4 +1,3 @@
-local vim = vim
 return {
   "neovim/nvim-lspconfig",
   opts = {
