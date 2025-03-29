@@ -8,6 +8,7 @@ local vim = vim
 -- Set different python3_host_prog value based on OS
 if vim.loop.os_uname().sysname == "Windows_NT" then
   vim.g.python3_host_prog = "C:\\Users\\WZY\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+  LazyVim.terminal.setup("pwsh")
 elseif vim.loop.os_uname().sysname == "Linux" then
   vim.g.python3_host_prog = "/home/wikineo/.pyenv/versions/neovim/bin/python"
   vim.g.ruby_host_prog = "/home/wikineo/.rbenv/versions/3.3.4/bin/neovim-ruby-host"
