@@ -9,3 +9,10 @@ return {
     })
   end,
 }
+
+-- Usage
+--
+-- Comes with 3 commands, intended to be run from the buffer containing your Swagger file.
+--     :SwaggerPreview - starts a new preview, killing any preexisting server
+--     :SwaggerPreviewStop - stops the current server
+--     :SwaggerPreviewToggle - turns preview on if it was off, kills it if it was on

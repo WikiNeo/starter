@@ -13,6 +13,9 @@ return {
       yamlls = {
         settings = {
           yaml = {
+            format = {
+              singleQuote = true,
+            },
             editor = {
               tabSize = 4,
             },
