@@ -8,15 +8,11 @@ return {
   -- Setting this value will imply Plugin.config()
   opts = {
     style = "moon",
-    on_highlights = function(hl, colors)
-      -- change line number color
-      hl.LineNr = {
-        fg = "#b2b8cf",
-      }
-      -- change current line numebr color
-      hl.CursorLineNr = {
-        fg = colors.orange,
-      }
+    on_highlights = function(highlights, colors)
+      highlights.LineNr = { fg = "#7aa2f7" } -- fallback
+      highlights.LineNrAbove = { fg = "#7aa2f7" } -- relative above
+      highlights.LineNrBelow = { fg = "#7aa2f7" } -- relative below
+      highlights.CursorLineNr = { fg = "#ff9e64", bold = true } -- current line
     end,
   },
 }

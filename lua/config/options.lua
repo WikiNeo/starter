@@ -21,7 +21,6 @@ end
 -- vim.opt START----------
 local options = {
   spelllang = { "en", "cjk" },
-  relativenumber = false,
   conceallevel = 0,
 }
 

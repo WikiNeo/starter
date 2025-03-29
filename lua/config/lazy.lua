@@ -39,6 +39,7 @@ require("lazy").setup({
     notify = false, -- notify on update
   }, -- automatically check for plugin updates
   performance = {
+    -- runtimepath (or rtp) is a Vim/Neovim option that tells the editor where to look for:
     rtp = {
       -- disable some rtp plugins
       disabled_plugins = {
