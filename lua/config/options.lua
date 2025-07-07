@@ -21,6 +21,7 @@ end
 -- vim.opt START----------
 local options = {
   spelllang = { "en", "cjk" },
+  conceallevel = 0,
 }
 
 for k, v in pairs(options) do
