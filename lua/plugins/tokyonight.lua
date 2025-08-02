@@ -1,11 +1,6 @@
 return {
   "folke/tokyonight.nvim",
-  -- opts should be
-  --  a table (will be merged with parent specs),
-  --  return a table (replaces parent specs)
-  --  or should change a table.
-  -- The table will be passed to the Plugin.config() function.
-  -- Setting this value will imply Plugin.config()
+
   opts = {
     style = "moon",
     on_highlights = function(highlights, colors)

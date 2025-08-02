@@ -15,6 +15,12 @@ return {
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
+    -- table or fun(LazyPlugin, opts:table)
+    --
+    -- opts should be a table (will be merged with parent specs), return a
+    -- table (replaces parent specs) or should change a table. The table will
+    -- be passed to the Plugin.config() function. Setting this value will imply
+    -- Plugin.config()
     opts = {
       colorscheme = "gruvbox",
     },
@@ -28,11 +34,24 @@ return {
   },
 
   -- disable trouble
-  { "folke/trouble.nvim", enabled = false },
+  {
+    "folke/trouble.nvim",
+    -- boolean? or fun():boolean
+    --
+    -- When false, or if the function returns false, then this plugin will not
+    -- be included in the spec
+    enabled = false,
+  },
 
   -- override nvim-cmp and add cmp-emoji
   {
     "hrsh7th/nvim-cmp",
+    -- LazySpec[]
+    --
+    -- A list of plugin names or plugin specs that should be loaded when the
+    -- plugin loads. Dependencies are always lazy-loaded unless specified
+    -- otherwise. When specifying a name, make sure the plugin spec has been
+    -- defined somewhere else.
     dependencies = { "hrsh7th/cmp-emoji" },
     ---@param opts cmp.ConfigSchema
     opts = function(_, opts)
@@ -81,6 +100,8 @@ return {
     "neovim/nvim-lspconfig",
     dependencies = {
       "jose-elias-alvarez/typescript.nvim",
+      -- fun(LazyPlugin)
+      --
       -- init functions are always executed during startup.
       -- Mostly useful for setting vim.g.* configuration used by Vim plugins startup
       init = function()
