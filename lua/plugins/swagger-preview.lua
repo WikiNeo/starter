@@ -2,8 +2,7 @@ return {
   "vinnymeller/swagger-preview.nvim",
   cmd = { "SwaggerPreview", "SwaggerPreviewStop", "SwaggerPreviewToggle" },
   -- fun(LazyPlugin) or string or false or a list of build commands
-  --
-  -- build is executed when a plugin is installed or updated.
+  --  build is executed when a plugin is installed or updated.
   build = "npm i",
   config = function()
     require("swagger-preview").setup({
