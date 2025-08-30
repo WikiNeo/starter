@@ -22,6 +22,7 @@ end
 local options = {
   spelllang = { "en", "cjk" },
   conceallevel = 0,
+  guifont = "JetBrainsMono Nerd Font:h15",
 }
 
 for k, v in pairs(options) do
