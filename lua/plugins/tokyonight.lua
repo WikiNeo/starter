@@ -1,8 +1,11 @@
+if true then
+  return {}
+end
 return {
   "folke/tokyonight.nvim",
 
   opts = {
-    style = "moon",
+    style = "storm",
     on_highlights = function(highlights, colors)
       highlights.LineNr = { fg = "#7aa2f7" } -- fallback
       highlights.LineNrAbove = { fg = "#7aa2f7" } -- relative above
