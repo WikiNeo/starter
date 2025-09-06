@@ -13,7 +13,7 @@ return {
         settings = {
           yaml = {
             format = {
-              singleQuote = true,
+              -- singleQuote = true,
             },
             editor = {
               tabSize = 4,
