@@ -21,8 +21,8 @@ end
 -- vim.opt START----------
 local options = {
   spelllang = { "en", "cjk" },
-  -- conceallevel = 0,
-  guifont = "JetBrainsMono Nerd Font:h15",
+  conceallevel = 0,
+  guifont = "JetBrainsMono Nerd Font:h18",
 }
 
 for k, v in pairs(options) do
