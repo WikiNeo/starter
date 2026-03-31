@@ -15,8 +15,10 @@ return {
       -- Add aerial to left
       opts.left = opts.left or {}
       table.insert(opts.left, {
+        title = "Aerial",
         ft = "aerial",
-        title = "Symbols",
+        pinned = true,
+        open = "AerialOpen",
       })
     end,
   },
