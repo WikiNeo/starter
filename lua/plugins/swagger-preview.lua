@@ -6,7 +6,7 @@ return {
   build = "npm i",
   config = function()
     require("swagger-preview").setup({
-      port = 8001,
+      port = 8002,
     })
   end,
 }
