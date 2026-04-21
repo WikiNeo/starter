@@ -5,7 +5,7 @@ return {
       -- Set right sidebar width
       opts.options = opts.options or {}
       opts.options.right = { size = 100 }
-      opts.options.left = { size = 80 }
+      opts.options.left = { size = 40 }
 
       -- Remove aerial from right
       opts.right = vim.tbl_filter(function(view)
