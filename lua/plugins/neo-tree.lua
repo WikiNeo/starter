@@ -3,7 +3,7 @@ return {
   opts = {
     sources = {
       "filesystem",
-      "buffers",
+      -- "buffers",
       -- "git_status"
     },
     filesystem = {

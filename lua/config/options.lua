@@ -30,4 +30,7 @@ vim.filetype.add({
     ["Jenkinsfile.cbci"] = "groovy",
     ["Jenkinsfile"] = "groovy",
   },
+  extension = {
+    gotxt = "gotmpl",
+  },
 })
